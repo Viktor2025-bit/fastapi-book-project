@@ -22,8 +22,3 @@ async def health_check():
     """Checks if server is active."""
     return {"status": "active"}
 
-@app.on_event("startup")
-async def startup_event():
-    # Log all registered routes
-    routes = [route.path for route in app.routes]
-    print("Registered routes:", routes)
