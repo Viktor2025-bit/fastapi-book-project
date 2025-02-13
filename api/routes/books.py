@@ -41,7 +41,7 @@ async def create_book(book: Book):
     )
 
 
-@router.get(
+@router.ge(
     "", response_model=OrderedDict[int, Book], status_code=status.HTTP_200_OK
 )
 async def get_books() -> OrderedDict[int, Book]:
