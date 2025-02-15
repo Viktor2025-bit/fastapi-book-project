@@ -1,0 +1,6 @@
+{
+    "name": "FastAPI with Nginx",
+    "dockerFile": "Dockerfile",
+    "forwardPorts": [80]
+  }
+  
